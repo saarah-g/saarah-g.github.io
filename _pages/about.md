@@ -2,7 +2,7 @@
 title: About me
 subtitle: Great to meet you!
 description: Great to meet you!
-featured_image: /images/demo/about.jpg
+featured_image: /images/qdsh.jpg
 ---
 ![me](/images/me.jpg)
 
