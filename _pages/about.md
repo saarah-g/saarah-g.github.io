@@ -16,4 +16,4 @@ Aside from Robotics, I love playing guitar, hiking, and cold plunges!
 
 I am currently living in Chicago, and will be available for full-time work beginning September 2020.
 
-<a href="/images/MR.pdf" class="button button--large" download="MR.pdf">Resume</a>
+<a href="https://moribots.github.io/images/MR.pdf" class="button button--large" download="MR.pdf">Resume</a>
