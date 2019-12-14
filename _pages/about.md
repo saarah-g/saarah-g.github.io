@@ -1,32 +1,19 @@
 ---
 title: About me
-subtitle: Personal is the perfect theme for developers, designers and other creatives.
-description: Personal is the perfect theme for developers, designers and other creatives.
+subtitle: Great to meet you!
+description: Great to meet you!
 featured_image: /images/demo/about.jpg
 ---
+![me](/images/me.jpg)
 
-## Features
+Thanks for stopping by! I'm Maurice, an aspiring Roboticist from Lebanon (34.24°N, 36.01°E). 
 
-We've packed Personal full of powerful features to help showcase your work:
+After completing my BEng in Electrical & Mechanical Engineering, I decided to enroll in Northwestern's Master of Science in Robotics program! My interests within Robotics include path planning, legged locomotion, and active prosthetics. My current project is to use Reinforcement Learning to teach a bipedal robot how to walk!
 
-* Beautiful, minimal design
-* Large header image and single column post layout
-* Responsive – works perfectly on all devices
-* Portfolio post type
-* Blog with pagination
-* Sleek Ajax navigation and page transitions
-* Unique 'gallery' feature for image grids and carousels
-* Built-in contact form with Formspree integration
-* Full markdown support and code highlighting
-* Social media icons
-* Fast page rendering
-* Built with SEO best practices in mind
-* Customize everything – colors, spacing, fonts, sizes etc. – via a simple settings file
-* Works with GitHub Pages
-* Updated and supported by the developers
+I perform my best work in small, tight-knight teams that are autonomous, ambitious and innovative. 
 
-## Get Personal
+Aside from Robotics, I love playing guitar, hiking, and cold plunges! 
 
-Personal is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $49.
+I am currently living in Chicago, and will be available for full-time work beginning September 2020.
 
-<a href="https://jekyllthemes.io/theme/personal-website-jekyll-theme" class="button button--large">Get This Theme</a>
+<a href="/images/Maurice_Rahme_CV.pdf" class="button button--large">Resume</a>

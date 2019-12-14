@@ -1,9 +1,9 @@
 ---
-title: 'Demo Project'
-subtitle: 'This is a demo'
-date: 2018-06-30 00:00:00
-description: This page is a demo that shows everything you can do inside portfolio and blog posts.
-featured_image: '/images/demo/demo-square.jpg'
+title: 'Baxter Plays Checkers'
+subtitle: 'ROS, MoveIt, AI, OpenCV'
+date: 2019-12-13 10:05:55 +0300
+description: My project team and I programmed a Baxter robot to play a full game of checkers against a human opponent. This project placed 1st in the judged competition between 6 teams!
+featured_image: '/images/Projects/baxter_chx2.png'
 ---
 
 ![](/images/demo/demo-landscape.jpg)
