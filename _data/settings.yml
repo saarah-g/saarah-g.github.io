@@ -16,6 +16,8 @@ menu_settings:
       url: '/about'
     - title: 'Contact'
       url: '/contact'
+    - title: 'Resume'
+      url: 'https://moribots.github.io/images/MR.pdf'
 
 footer_settings:
   footer_tagline: 'Creativity from prototyping to production.'
