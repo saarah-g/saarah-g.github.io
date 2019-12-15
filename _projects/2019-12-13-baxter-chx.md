@@ -2,7 +2,7 @@
 title: 'Baxter Plays Checkers'
 subtitle: 'ROS, MoveIt, OpenCV, AI'
 date: 2019-12-13 10:05:55 +0300
-description: My project team and I programmed a Baxter robot to play a full game of checkers against a human opponent. This project placed 1st in the judged competition between 6 teams!
+description: Programmed a Baxter robot to play a full game of checkers against a human opponent. This project placed 1st in the judged competition between 6 teams!
 featured_image: '/images/Projects/baxter_chx/baxter_chx2.png'
 ---
 

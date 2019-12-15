@@ -1,7 +1,7 @@
 ---
 title: 'Controlled Electromagnetic Levitation'
 subtitle: 'Nonlinear Control, Electromagnetics, Optics'
-date: 2019-09-09 00:00:00
+date: 2018-11-15 00:00:00
 description: Final year group project at The University of Edinburgh, where we sought to levitate a steel ball using an electromagnet.
 featured_image: '/images/Projects/maglev-uofe/maglev-rig.png'
 ---
@@ -14,7 +14,7 @@ featured_image: '/images/Projects/maglev-uofe/maglev-rig.png'
   </figure>
 
 ### Summary:
-This project focuses on the stable levitation of a steel ball to explore the principles of magnetic levitation and the control theory that underlie the technology. After modeling and developing a test rig was to balance a steel ball in place using one electromagnet, a more complex two dimensional model was then made to actively control the height of the ball as well as its longitudinal travel. For the 1D system a genetic algorithm was used which produced increasingly suitable PID values as it was left to run over time. The algorithm provided a quicker, easier and more accurate solution compared to manual tuning. The 2D model required an investigation into cutting-edge control theory; primarily decoupled nonlinear control of inherently coupled systems.
+This project focuses on the stable levitation of a steel ball to explore the principles of magnetic levitation and the control theory that underlie the technology. After modeling and developing a test rig was to balance a steel ball in place using one electromagnet, a more complex two dimensional model was then made to actively control the height of the ball as well as its longitudinal travel. For the 1D system a genetic algorithm was used which produced increasingly suitable PID values as it was left to run over time. The algorithm provided a quicker, easier and more accurate solution compared to manual tuning. The 2D model required an investigation into cutting-edge control theory; primarily decoupled nonlinear control of inherently coupled systems. The simulation shown here also displays the square wave control signal in yellow and the steel ball's response in blue.
 
 ### 1D System:
 For the 1D System, a state-space model was implemented using first-principles of electromagnetism supplemented by simulations in ANSYS AIM, whereby the ball's position was altered by a set distance for each trial, and the current required to keep it from falling was recorded using $J=\frac{4I}{D^2}$ where $J$ is flux. This resulted in the equation $I=k(x+x_0)^2$ where $I$ is current, $k$ is a physical system constant, $x_0$ is a system offset, and $x$ is the ball's displacement from the magnet.
