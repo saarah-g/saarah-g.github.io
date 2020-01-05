@@ -8,7 +8,7 @@ featured_image: '/images/Projects/baxter_chx/showcase2.gif'
 
 ## Project Overview
 
-For this project, we built a ROS (Robot Operating System) Melodic package that allows a Baxter robot to play modern checkers (this means that possible jumps must be taken)! The package gives you the choice to play using our custom AI move generator, or against a human-operated Baxter robot. View it on [GitHub](https://github.com/moribots/final-project-checkers)!
+For this project, my team built a ROS (Robot Operating System) Melodic package that allows a Baxter robot to play modern checkers (this means that possible jumps must be taken)! The package gives you the choice to play using our custom AI move generator, or against a human-operated Baxter robot. View it on [GitHub](https://github.com/moribots/final-project-checkers)!
 
 Here's a 6x sped-up video showing a full AI-operated game (minus kings)! 
 
@@ -29,7 +29,7 @@ The state diagram below explains the main flow of the program:
 
 To move Baxter's arms, an `action server` was created which called `MoveIt!` methods depending on the type of goal received. For example, if a pick or place goal was received from the client, the server called `MoveIt!`'s cartesian path planner in the end-effector space to perform a pick and place for the given coordinates using the following sequence:
 
-1. Pre-move home position (dependent on reachability for the chosen side of the board).
+1. Pre-move home position (dependent on reachability of target area).
 2. Pick standoff position.
 3. Pick.
 4. Pick standoff position.
@@ -62,4 +62,4 @@ In brief, the minimax algorithm is a recursive tree search algorithm where, begi
 
 This algorithm is optimized for speed using alpha-beta pruning, introducing aptly-named variables which record the maximum and minimum values of each parent node's children, so that once a child is found to have a worse score than the current maximum or minimum, its own branches are discarded from the search tree. This addition more than doubles the explorable tree-depth for a reasonable wait time whilst still returning equivalently good moves.
 
-For more details, and to use our package, please check out the [GitHub repository](https://github.com/moribots/final-project-checkers)!
+To use the package, please check out the [GitHub repository](https://github.com/moribots/final-project-checkers)!
