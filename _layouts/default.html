@@ -4,13 +4,10 @@
 
 <head>
 
-	{% include mathjax_support %}
+	{% include mathjax.html %}
 	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 	{{ site.data.settings.basic_settings.site_title }}
-
-	Personal Theme by https://jekyllthemes.io
-	Premium + free Jekyll themes for your blog or website.
 
 	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -100,6 +97,8 @@
 	{{ site.data.settings.advanced_settings.footer_js }}
 	{% endif %}
 
+
+	{% include mathjax.html %}
 
 </body>
 
