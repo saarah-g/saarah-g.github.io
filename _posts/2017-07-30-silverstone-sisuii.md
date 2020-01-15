@@ -1,5 +1,5 @@
 ---
-title: 'Interview at Silverstone'
+title: 'Interviewed at Silverstone'
 date: 2019-08-23 00:00:00
 description: I was interviewed regarding my undergraduate university's Formula Student team during FSUK 2017.
 featured_image: '/images/Projects/eufs/SISU_II_Pods_I.jpg'

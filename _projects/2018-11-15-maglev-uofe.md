@@ -1,5 +1,5 @@
 ---
-title: 'Controlled Electromagnetic Levitation'
+title: 'Controlled Levitation'
 subtitle: 'Nonlinear Control, Electromagnetics, Optics'
 date: 2018-11-15 00:00:00
 description: Final year group project at The University of Edinburgh, where we sought to levitate a steel ball using an electromagnet.
