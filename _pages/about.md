@@ -4,7 +4,9 @@ subtitle: Great to meet you!
 description: Great to meet you!
 featured_image: /images/qdsh.jpg
 ---
-![me](/images/me.jpg)
+<figure style= "text-align: center; float: left; width: 65%; margin-right: 2%; margin-left: 0%; font-style: italic">
+    <img src="/images/me.jpg" style="width: 70%;" class="img-fluid rounded">
+  </figure>
 
 Thanks for stopping by! I'm Maurice, an aspiring Roboticist from Lebanon (34.24°N, 36.01°E). 
 

@@ -10,6 +10,7 @@
 	margin-top: 20px;
 	padding: 60px 0 100px;
 	background: $hero-background-color;
+	height: 350px !important;
 
 	@include mq(tabletp) {
 		margin-top: 25px;
