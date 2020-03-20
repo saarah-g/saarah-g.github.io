@@ -14,7 +14,7 @@ Here's a 6x sped-up video showing a full AI-operated game (minus kings)!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZOXy3TKYeM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The core project components were:
+The core project components are:
 
 * `MoveIt!` for controlling the robot's arms during pick and place routines as well arm setups for viewing the board and safely shutting down.
 * `OpenCV` with `CV Bridge` for image processing to identify the board state using ROS images.
