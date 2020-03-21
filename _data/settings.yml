@@ -154,7 +154,7 @@ font_settings:
 
 advanced_settings:
   ajax_loading: false
-  analytics_code: ""
+  analytics: UA-161551607-1
   custom_styles: ""
   header_js: ""
   footer_js: ""
