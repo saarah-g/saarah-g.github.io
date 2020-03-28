@@ -16,6 +16,6 @@ I perform my best work in small, tight-knight teams that are ambitious and innov
 
 Aside from Robotics, I love playing guitar, hiking, and cold plunges! 
 
-I am currently looking for full-time work in Autonomous Vehicles, Robot Locomotion, and R&D. I am open to relocation.
+I am currently looking for full-time work in Autonomous Vehicles, Robot Locomotion, and Robotics R&D. I am open to relocation.
 
 <a href="https://moribots.github.io/images/MR.pdf" class="button button--large" download="MR.pdf">Resume</a>
