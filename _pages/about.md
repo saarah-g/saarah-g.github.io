@@ -10,12 +10,12 @@ featured_image: /images/qdsh.jpg
 
 Thanks for stopping by! I'm Maurice, an aspiring Roboticist from Lebanon. 
 
-After completing my BEng in Electrical & Mechanical Engineering, I decided to enroll in Northwestern's Master of Science in Robotics program! My interests within Robotics include SLAM, path planning, legged locomotion, and active prosthetics. My next project is to deploy a dynamically stable gait onto a Minitaur robot to implement ORB-SLAM2 using its stereo camera!
+After completing my BEng in Electrical & Mechanical Engineering, I decided to enroll in Northwestern's Master of Science in Robotics program! My interests within Robotics include legged locomotion, SLAM, path planning, and active prosthetics. My next project is to deploy a dynamically stable gait onto a Minitaur robot to implement ORB-SLAM2 using its stereo camera!
 
 I perform my best work in small, tight-knight teams that are ambitious and innovative. 
 
 Aside from Robotics, I love playing guitar, hiking, and cold plunges! 
 
-I am currently looking for full-time work in Autonomous Vehicles, Robot Locomotion, and Robotics R&D. I am open to relocation.
+I am currently looking for full-time work in Robot Locomotion, Autonomous Vehicles, and Robotic Manipulators with a focus on motion planning. I am open to relocation.
 
 <a href="https://moribots.github.io/images/MR.pdf" class="button button--large" download="MR.pdf">Resume</a>
