@@ -53,6 +53,6 @@ Following from this theory, a simulation was developed in Simulink to test out t
 
 The report below goes into more detail and explores the modifications made to the control pipeline to improve the rig and adapt it to 2D levitation.
 
-<a href="https://moribots.github.io/images/Projects/maglev-uofe/Maglev_Report.pdf" class="button button--large" download="MR.pdf">Download Report</a>
+<a href="https://moribots.github.io/images/Projects/maglev-uofe/Maglev_Report.pdf" class="button button--large" download="Maglev_Report.pdf">Download Report</a>
 
 <!-- >> Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. -->
