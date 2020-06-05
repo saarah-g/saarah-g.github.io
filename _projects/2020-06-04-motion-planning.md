@@ -7,9 +7,9 @@ featured_image: '/images/Projects/motion-planning/motion-planning.gif'
 ---
 
 ## Project Overview
-Three peers and I constructed a syllabus and lecture materials to allow students to construct a motion planning library in C++ from scratch, using ROS' RViz as a visualization tool. You can view my implementation of the library on [Github](https://github.com/moribots/motion_planning). You can also view the lecture presentations [here](https://drive.google.com/drive/folders/1cQPgsTp_WxQzAHI9MuW2DCCEdAA5OOdO?usp=sharing) for more detail on each algorithm.
+Three peers and I constructed a syllabus and lecture materials to allow students to construct a motion planning library in C++ from scratch, using ROS' RViz as a visualization tool. You can view my implementation of the library and the course syllabus on [Github](https://github.com/moribots/motion_planning). You can also view the lecture presentations [here](https://drive.google.com/drive/folders/1cQPgsTp_WxQzAHI9MuW2DCCEdAA5OOdO?usp=sharing) for more detail on each algorithm.
 
-<a href="https://moribots.github.io/images/Projects/maglev-uofe/Maglev_Report.pdf" class="button button--large" download="Maglev_Report.pdf">Syllabus</a>
+<!-- <a href="https://moribots.github.io/images/Projects/motion-planning/syllabus.pdf" class="button button--large" download="syllabus.pdf">Syllabus</a> -->
 
 ## Map Generation
 The first part of the library contains two map generation methods, a **Probabilistic Roadmap**, and a **Grid Map**.
