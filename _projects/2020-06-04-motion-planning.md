@@ -86,7 +86,7 @@ Here is a gif of the planner in action alongisde the algorithm
 MPPI is a sample-based approach to solving the stochastic Model Predictive Control problem. It works well with highly nonlinear system dynamics as it does not have continuity, differentiability or convexity assumptions. The main idea is to construct an optimal distribution from which we sample an optimal action for the current time step. To do this, we apply Jensen's Inequality to the Free Energy Formulation, which models how stochastic systems behave in non-equilibrium states. From the fact that a system's free energy bounds the optimal control problem, we can formulate the optimal control distribution through its probability density function. However, although we cannot directly sample from this distribution, we can use it to evaluate whether action samples are likely optimal by optimizing the system's KL-Divergence. This gives us a recursive solution based on an importance ratio $\omega$. In terms of tuning, the cost function, action distribution variance and temperature parameter $\lambda$ all impact MPPI's performance. In particular, $\lambda$ determines the sensitivity of the importance ratio update, where increasing it reduces the resolution of the update in terms of evaluating the costs of adjacent samples.  Below is said solution along with the MPPI algorithm:
 
 <div class="gallery" data-columns="1">
-	<img src="/images/Projects/motion-planning/MPPI_sln.png" style="width: 100%">
+	<img src="/images/Projects/motion-planning/MPPI_sln.png" style="width: 50%">
 </div>
 
 <div class="gallery" data-columns="2">
@@ -97,13 +97,13 @@ MPPI is a sample-based approach to solving the stochastic Model Predictive Contr
 Notably, after the update step, we shift all the actions one timestep down in what is known as a receding horizon. Below is the resultant control for a parallel parking operation on a Differential Drive robot (Turtlebot3) model.
 
 <div class="gallery" data-columns="1">
-	<img src="/images/Projects/motion-planning/mppi_parallel_park.gif" style="width: 100%">
+	<img src="/images/Projects/motion-planning/mppi_parallel_park.gif" style="width: 50%">
 </div>
 
 And the associated states and actions (wheel velocities):
 
 <div class="gallery" data-columns="1">
-	<img src="/images/Projects/motion-planning/MPPI_park.gif" style="width: 100%">
+	<img src="/images/Projects/motion-planning/MPPI_park.gif" style="width: 60%">
 </div>
 
 
