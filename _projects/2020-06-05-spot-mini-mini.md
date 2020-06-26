@@ -56,16 +56,22 @@ Here's what this looks like on Spot:
 	<img src="/images/Projects/spot-mini-mini/spot_yaw.gif" style="width: 50%">
 </div>
 
-<!-- ## Environment and Terrain
+## Gym Environment and Terrain
 
-The environment provided here is largely derived from Pybullet's **minitaur** example. In fact, it is nearly identical aside from accounting for the differences in the robots themselves. Another difference is the terrain used in the environment, for which I provide 3 options. First, the **plane** terrain (default) is the unmodified ground surface in Pybullet. Next, you have the option to use a programmatically generated heightfield (see `heightfield.py`) using **height_field=True** in the env constructor, or an image-generated one, for which you also need **img_heightfield=True**. You should experiment with the meshscale argument as well, as this will change the characteristics of your terrain.
+The environment provided here is largely derived from Pybullet's **minitaur** example. In fact, it is nearly identical aside from accounting for the differences in the robots themselves. Another difference is the terrain used in the environment, which is an optional programmatically generated heightfield (see `heightfield.py`) using **height_field=True** in the env constructor. You should experiment with the meshscale argument as well, as this will change the characteristics of your terrain. This environment is great for locomotive reinforcement learning tasks! Notice that if we increase the mesh size, and hence the terrain's roughness, the robot loses the ability to traverse it:
 
-<div class="gallery" data-columns="1">
-	<img src="/images/Projects/spot-mini-mini/rough.png" style="width: 100%">
-	<img src="/images/Projects/spot-mini-mini/mountain.png" style="width: 100%">
+<div class="gallery" data-columns="2">
+	<img src="/images/Projects/spot-mini-mini/rough.png" style="width: 95%">
+	<img src="/images/Projects/spot-mini-mini/spot_rough_falls.gif" style="width: 100%">
 </div>
 
-## Reinforcement Learning Task -->
+### Reinforcement Learning Task
+
+To allow for stable terrain traversal, I trained an [Augmented Random Search](https://arxiv.org/pdf/1803.07055.pdf)) agent with a 16-dimensional observation space [**IMU Inputs** (8), **Leg Phases** (4), **Leg Contacts** (4)] - noting that leg contacts are **not** normalized by the state observer - and a 14-dimensional action space [**Clearance Height** (1), **Body Height** (1), and **Foot XYZ Residual** modulations (12)], where **Clearance Height** is processed through an exponential filter with **alpha = 0.7**, the agent was able to traverse the rough terrain in as little as 149 epochs:
+
+<div class="gallery" data-columns="1">
+	<img src="/images/Projects/spot-mini-mini/spot_rough_ARS.gif" style="width: 100%">
+</div>
 
 
 
