@@ -2,7 +2,7 @@
 title: 'Spot Mini Mini'
 subtitle: 'Quadruped Locomotion, Bezier Gait, Reinforcement Learning'
 date: 2020-06-04 10:05:55 +0300
-description: Developed Pybullet Spot Environment and deployed 12-point Bezier-curve gait as baseline for RL task. 
+description: Developed Pybullet Spot Environment and deployed 12-point Bezier-curve gait as baseline for RL task. Validated on real robot.
 featured_image: '/images/Projects/spot-mini-mini/full_control.gif'
 ---
 
