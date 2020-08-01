@@ -3,14 +3,14 @@ title: 'Spot Mini Mini'
 subtitle: 'Quadruped Locomotion, Bezier Gait, Reinforcement Learning'
 date: 2020-06-04 10:05:55 +0300
 description: Developed Pybullet Spot Environment and deployed 12-point Bezier-curve gait as baseline for RL task. 
-featured_image: '/images/Projects/spot-mini-mini/spot-mini-mini.gif'
+featured_image: '/images/Projects/spot-mini-mini/full_control.gif'
 ---
 
 ## Project Overview
 The goal of this project is to deploy a remote-controlled quadruped platform on which ORB-SLAM2 can be performed. For phase one of this two-part project, I built a Pybullet environment using the open-source Spot Micro CAD models for a fairly accessible (< $1000) robot. Then, I deployed a 12-point Bezier gait with proprioceptive feedback for phase reset, and used this as a baseline for Reinforcement Learning tasks on various terrain environments. Feel free to check out the package on [Github](https://github.com/moribots/spot_mini_mini).
 
 <div class="gallery" data-columns="1">
-	<img src="/images/Projects/spot-mini-mini/spot-mini-mini.gif" style="width: 80%">
+	<img src="/images/Projects/spot-mini-mini/full_control.gif" style="width: 80%">
 </div>
 
 ## Inverse Kinematics
