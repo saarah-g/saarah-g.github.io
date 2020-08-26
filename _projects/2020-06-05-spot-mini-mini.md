@@ -3,11 +3,11 @@ title: 'Spot Mini Mini'
 subtitle: 'Quadruped Locomotion, Bezier Gait, Reinforcement Learning'
 date: 2020-06-04 10:05:55 +0300
 description: Developed Pybullet Spot Environment and deployed 12-point Bezier-curve gait as baseline for RL task. Validated on real robot.
-featured_image: '/images/Projects/spot-mini-mini/full_control.gif'
+featured_image: '/images/Projects/spot-mini-mini/spot_hello.gif'
 ---
 
 ## Project Overview
-The goal of this project is to deploy a remote-controlled quadruped platform on which ORB-SLAM2 can be performed. For phase one of this two-part project, I built a Pybullet environment using the open-source Spot Micro CAD models for a fairly accessible (< $1000) robot. Then, I deployed a 12-point Bezier gait with proprioceptive feedback for phase reset, and used this as a baseline for Reinforcement Learning tasks on various terrain environments. Feel free to check out the package on [Github](https://github.com/moribots/spot_mini_mini).
+The goal of this project was to create a remote-controlled quadruped platform for reinforcement learning tasks under $600. For phase one of this two-part project, I built a Pybullet environment using the open-source Spot Micro CAD models. Then, I deployed a 12-point Bezier gait with proprioceptive feedback for phase reset, and used this as a baseline for Reinforcement Learning tasks on various terrain environments. After building this original version, I collaborated with a friend to mechanically redesign Spot for higher fidelity, and more optimal weight distribution. Feel free to check out the package on [Github](https://github.com/moribots/spot_mini_mini).
 
 <div class="gallery" data-columns="1">
 	<img src="/images/Projects/spot-mini-mini/spot_demo.gif" style="width: 80%">
@@ -58,20 +58,59 @@ Here's what this looks like on Spot:
 
 ## Gym Environment and Terrain
 
-The environment provided here is largely derived from Pybullet's **minitaur** example. In fact, it is nearly identical aside from accounting for the differences in the robots themselves. Another difference is the terrain used in the environment, which is an optional programmatically generated heightfield (see `heightfield.py`) using **height_field=True** in the env constructor. You should experiment with the meshscale argument as well, as this will change the characteristics of your terrain. This environment is great for locomotive reinforcement learning tasks! Notice that if we increase the mesh size, and hence the terrain's roughness, the robot loses the ability to traverse it:
+The environment provided here is largely derived from Pybullet's **minitaur** example. In fact, it is nearly identical aside from accounting for the differences in the robots themselves. Another difference is the terrain used in the environment, which is an optional programmatically generated heightfield triggered at the command-line. You should experiment with the meshscale argument as well, as this will change the characteristics of your terrain. This environment is great for locomotive reinforcement learning tasks! Notice that if we increase the mesh size, and hence the terrain's roughness, the robot loses the ability to traverse it:
 
 <div class="gallery" data-columns="2">
-	<img src="/images/Projects/spot-mini-mini/rough.png" style="width: 95%">
+	<img src="/images/Projects/spot-mini-mini/spot_new_demo.gif" style="width: 100%">
 	<img src="/images/Projects/spot-mini-mini/spot_rough_falls.gif" style="width: 100%">
 </div>
 
 ### Reinforcement Learning Task
 
-To allow for stable terrain traversal, I trained an [Augmented Random Search](https://arxiv.org/pdf/1803.07055.pdf)) agent with a 16-dimensional observation space [**IMU Inputs** (8), **Leg Phases** (4), **Leg Contacts** (4)] - noting that leg contacts are **not** normalized by the state observer - and a 14-dimensional action space [**Clearance Height** (1), **Body Height** (1), and **Foot XYZ Residual** modulations (12)], where **Clearance Height** is processed through an exponential filter with **alpha = 0.7**, the agent was able to traverse the rough terrain in as little as 149 epochs:
+To allow for stable terrain traversal, I trained an [Augmented Random Search](https://arxiv.org/pdf/1803.07055.pdf) agent with a 12-dimensional observation space [**IMU Inputs** (8), **Leg Phases** (4)] and a 14-dimensional action space [**Clearance Height** (1), **Body Height** (1), and **Foot XYZ Residual** modulations (12)] processed through an exponential filter with **alpha = 0.7**, the agent was able to traverse the rough terrain in as little as 149 epochs. Notably, the gif with the updated URDF and **2x higher** terrain shows that this RL method fits seamlessly into an existing control scheme and with unseen commands, such as lateral and yaw movements:
 
 <div class="gallery" data-columns="1">
-	<img src="/images/Projects/spot-mini-mini/spot_rough_ARS.gif" style="width: 100%">
+	<img src="/images/Projects/spot-mini-mini/spot_rough_ARS.gif" style="width: 70%">
 </div>
+
+<div class="gallery" data-columns="1">
+	<img src="/images/Projects/spot-mini-mini/spot_new_universal.gif" style="width: 70%">
+</div>
+
+### Real World Validation
+
+I conducted some simple experiments to validate the trained agent (right) compared to a non-agent run (left) in the real world:
+
+<div class="gallery" data-columns="2">
+	<img src="/images/Projects/spot-mini-mini/spot_vanilla_fall.gif" style="width: 100%">
+	<img src="/images/Projects/spot-mini-mini/spot_agent_walk.gif" style="width: 100%">
+</div>
+
+### Mechanical Reesign
+
+Together with [Adham Elarabawy](https://github.com/adham-elarabawy/OpenQuadruped), I have a completed a total mechanical [redesign](https://cad.onshape.com/documents/9d0f96878c54300abf1157ac/w/c9cdf8daa98d8a0d7d50c8d3/e/fa0d7caf0ed2ef46834ecc24) of SpotMicro, the robot that inspired this project. We call it **Open Quadruped**!
+
+<div class="gallery" data-columns="2">
+	<img src="https://user-images.githubusercontent.com/55120103/88461697-c3d07180-ce73-11ea-98c8-9a6af1b1225a.png" style="width: 150%">
+	<img src="https://user-images.githubusercontent.com/55120103/88461718-ea8ea800-ce73-11ea-8645-5b5cedadb0e6.png" style="width: 70%">
+</div>
+
+##### Main improvements:
+* Shortened the body by 40mm while making more room for our electronics with adapter plates.
+* Moved all the servos to the hip to save 60g on the lower legs, which are now belt-drive actuated with tunable belt tightness.
+* Added support bridge on hip joint for added longevity.
+* Added flush slots for hall effect sensors on the feet.
+
+I also went created a new URDF with proper inertial values on each link, making the simulation much more reliable.
+
+### Power Distribution Board
+
+We also designed this Power Distribution Board with a **1.5mm Track Width** to support up to **6A** at a **10C** temperature increase (conservative estimate). There are copper grounding planes on both sides of the board to help with heat dissipation, and parallel tracks for the power lines are provided for the same reason. The PDB also includes shunt electrolytic capactiors for each servo motor to smooth out the power input. The board interfaces with a sensor array (used for foot sensors on this project) and contains two  I2C terminals and a regulated 5V power rail. At the center of the board is a **Teensy 4.0** which communicates with a **Raspberry Pi** over ROSSerial to control the 12 servo motors and read analogue sensors.
+
+<div class="gallery" data-columns="1">
+	<img src="/images/Projects/spot-mini-mini/pdb.png" style="width: 30%">
+</div>
+
 
 
 
