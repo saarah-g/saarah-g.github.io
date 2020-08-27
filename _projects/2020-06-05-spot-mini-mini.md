@@ -84,9 +84,11 @@ I conducted some simple experiments to validate the trained agent (right) compar
 <div class="gallery" data-columns="2">
 	<img src="/images/Projects/spot-mini-mini/spot_vanilla_fall.gif" style="width: 100%">
 	<img src="/images/Projects/spot-mini-mini/spot_agent_walk.gif" style="width: 100%">
+	<img src="/images/Projects/spot-mini-mini/V2_3.gif" style="width: 100%">
+	<img src="/images/Projects/spot-mini-mini/T2_1.gif" style="width: 100%">
 </div>
 
-### Mechanical Reesign
+### Mechanical Redesign
 
 Together with [Adham Elarabawy](https://github.com/adham-elarabawy/OpenQuadruped), I have a completed a total mechanical [redesign](https://cad.onshape.com/documents/9d0f96878c54300abf1157ac/w/c9cdf8daa98d8a0d7d50c8d3/e/fa0d7caf0ed2ef46834ecc24) of SpotMicro, the robot that inspired this project. We call it **Open Quadruped**!
 
