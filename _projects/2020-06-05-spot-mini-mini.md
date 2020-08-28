@@ -1,6 +1,6 @@
 ---
 title: 'Spot Mini Mini'
-subtitle: 'Quadruped Locomotion, Bezier Gait, Reinforcement Learning, Mechanical, Electronics, Microcontroller'
+subtitle: 'Quadruped Locomotion, Bezier Gait, Reinforcement Learning'
 date: 2020-06-04 10:05:55 +0300
 description: Developed Pybullet Spot Environment and deployed 12-point Bezier-curve gait as baseline for RL task. Validated on real robot designed and built for under $600.
 featured_image: '/images/Projects/spot-mini-mini/spot_hello.gif'
