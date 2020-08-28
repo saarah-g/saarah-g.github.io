@@ -35,8 +35,8 @@ The best part is that even though the agent was only **trained** to walk **forwa
 After deriving the [Inverse Kinematics](https://www.researchgate.net/publication/320307716_Inverse_Kinematic_Analysis_Of_A_Quadruped_Robot) for each leg, the next step was to describe the IK for the body itself. The approach used here considers a **world frame** $w$, which is the robot centroid's base position, and a **body frame** $b$, describing the robot's pose relative to the world frame. In addition, we have $T_{wh}$, which is a transform from the world frame to the robot's hip: this describes the base transform between the robot centroid and the hip. Finally, we have our inputs: $T_{wb}$, which describes the desired transform from **world** to **body** (RPY and Translation), and $T_{bf}$, the desired **foot** position relative to the transformed **body** - this is useful for gait generation. The output of our process is $T_{hf}$, the transform between each **hip** and its respective **foot** required to achieve this motion. The gallery below shows our inputs and outputs, as well as the actual process for getting $T_{hf}$. Note that this diagram is facing the robot, so the example shown is for **body roll**.
 
 <div class="gallery" data-columns="1">
-	<img src="/images/Projects/spot-mini-mini/io.jpg" style="width: 70%">
-	<img src="/images/Projects/spot-mini-mini/thf.jpg" style="width: 70%">
+	<img src="/images/Projects/spot-mini-mini/io.jpg" style="width: 45%">
+	<img src="/images/Projects/spot-mini-mini/thf.jpg" style="width: 64%">
 </div>
 
 Here's a gif of the body IK in action:
