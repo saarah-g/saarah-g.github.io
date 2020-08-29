@@ -7,10 +7,11 @@
 
 .hero {
 	position: relative;
-	margin-top: 20px;
+	top: 0px;
+	margin-top: 0px;
 	padding: 60px 0 100px;
 	background: $hero-background-color;
-	height: 350px !important;
+	height: 300px !important;
 
 	@include mq(tabletp) {
 		margin-top: 25px;
@@ -23,6 +24,8 @@
 	}
 
 	h1 {
+		position: relative;
+		top: -70px;
 		color: $hero-text-color;
 
 		@include mq(tabletp) {
@@ -31,6 +34,9 @@
 	}
 
 	p {
+
+		position: relative;
+		top: -70px;
 		color: rgba($hero-text-color, 0.8);
 
 		@include mq(tabletp) {
@@ -43,6 +49,8 @@
 	}
 
 	.socials {
+		position: relative;
+		top: -70px;
 		margin-top: 15px;
 
 		@include mq(tabletp) {
