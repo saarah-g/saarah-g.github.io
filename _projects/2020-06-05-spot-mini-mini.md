@@ -17,8 +17,8 @@ The goal of this project was to create a **quadruped platform for reinforcement 
 My experience with locomotive RL is that it is mostly limited to demonstrative tasks (walk forward, stand up, etc) with little real-world use. Using this platform, I propose a **novel reinforcement learning method** that seeks to deliver a robust and universally controllable gait. It builds on an existing gait scheme using **12-point Bezier curves** which allow for any **combination** of forward, lateral, and yaw **commands** at user-defined step heights, lengths, and speeds. The method wraps a learning agent around this scheme to **modulate gait parameters** such as step and body height, and to add significant **residuals** to the resultant foot coordinates. The only sensor used here is an IMU. After simulating training for 1 hour on a CPU (\~500 epochs), I was able to achieve the following real-world results, where the **agent** is shown on the **right**.
 
 <div class="gallery" data-columns="2">
-	<img src="/images/Projects/spot-mini-mini/V2_3.gif" style="width: 100%">
-	<img src="/images/Projects/spot-mini-mini/T2_1.gif" style="width: 100%">
+	<img src="/images/Projects/spot-mini-mini/V_descent.gif" style="width: 100%">
+	<img src="/images/Projects/spot-mini-mini/A_descent.gif" style="width: 100%">
 </div>
 
 The best part is that even though the agent was only **trained** to walk **forward**, it responds to previously **unseen commands** such as **yaw** and **lateral** motion! This means that you can finally use RL on a real robot! Keep in mind that this is all done on a $600 platform!
@@ -95,9 +95,14 @@ To allow for stable terrain traversal, I trained an [Augmented Random Search](ht
 
 Here are some additional takes where the agent is on the right!
 
-<div class="gallery" data-columns="2">
+<!-- <div class="gallery" data-columns="2">
 	<img src="/images/Projects/spot-mini-mini/spot_vanilla_fall.gif" style="width: 100%">
 	<img src="/images/Projects/spot-mini-mini/spot_agent_walk.gif" style="width: 100%">
+</div> -->
+
+<div class="gallery" data-columns="2">
+	<img src="/images/Projects/spot-mini-mini/V2_3.gif" style="width: 100%">
+	<img src="/images/Projects/spot-mini-mini/T2_1.gif" style="width: 100%">
 </div>
 
 ### Mechanical Redesign
