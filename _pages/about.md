@@ -10,7 +10,7 @@ featured_image: /images/qdsh.jpg
 
 Thanks for stopping by! I'm **Maurice**, a Roboticist from **Lebanon**. 
 
-After completing my BEng in Electrical & Mechanical Engineering, I decided to enroll in **Northwestern**'s Master of Science in Robotics program! My interests within Robotics include legged locomotion, path planning, SLAM, and active prosthetics. My most recent project involved the full-stack development of a $600 open source **quadruped platform** for accessible reinforcement learning tasks.
+I recently graduated from **Northwestern**'s Master of Science in Robotics program! My interests within Robotics include legged locomotion, path planning, mechatronics, and SLAM. My most recent project involved the full-stack development of a $600 open source **quadruped platform** for accessible reinforcement learning tasks.
 
 
 I'm currently gearing up to start working on the **Handle** team at **Boston Dynamics**!
