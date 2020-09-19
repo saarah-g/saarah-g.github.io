@@ -89,6 +89,12 @@ To allow for stable terrain traversal, I trained an [Augmented Random Search](ht
 	<img src="/images/Projects/spot-mini-mini/spot_rough_ARS.gif" style="width: 70%">
 </div>
 
+Here is a system diagram describing the **Gait Modulation with Bezier Curves** method:
+
+<div class="gallery" data-columns="1">
+	<img src="/images/Projects/spot-mini-mini/GMBC_SM.png" style="width: 70%">
+</div>
+
 ### Real World Validation
 
 Here are some additional takes where the agent is on the right!
