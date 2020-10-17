@@ -51,7 +51,7 @@ Here's what the **translational** and **yaw** gaits look like:
 
 ## Gym Environment and Terrain
 
-The environment provided here is largely derived from Pybullet's **minitaur** example. In fact, it is nearly identical aside from accounting for the differences in the robots themselves. Another difference is the terrain used in the environment, which is an optional programmatically generated heightfield triggered at the command-line. You should experiment with the meshscale argument as well, as this will change the characteristics of your terrain. This environment is great for locomotive reinforcement learning tasks! Notice that if we increase the mesh height, traverse it:
+The environment provided here is largely derived from Pybullet's **minitaur** example. In fact, it is nearly identical aside from accounting for the differences in the robots themselves. Another difference is the terrain used in the environment, which is an optional programmatically generated heightfield triggered at the command-line. You should experiment with the meshscale argument as well, as this will change the characteristics of your terrain. This environment is great for locomotive reinforcement learning tasks!
 
 <div class="gallery" data-columns="2">
 	<img src="/images/Projects/spot-mini-mini/spot_new_demo.gif" style="width: 100%">
