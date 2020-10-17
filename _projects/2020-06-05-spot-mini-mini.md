@@ -35,8 +35,7 @@ Here's a gif of the body IK in action:
 
 
 ## Bezier Gait
-The [Bezier Gait](https://dspace.mit.edu/handle/1721.1/98270) deployed in this project uses a open-loop trajectory generator, which resets when the desired stride period is completed. The basic adaptation of the Bezier curve generator gives 2D foot coordinates over time: horizontal and vertical. In section V of the [paper](https://sites.google.com/view/d2gmbc/home), I describe my method for extending the trajectories into 3D. The algorithm and schematic are shown below:
-
+The [Bezier Gait](https://dspace.mit.edu/handle/1721.1/98270) deployed in this project uses a open-loop trajectory generator, which resets when the desired stride period is completed. The basic adaptation of the Bezier curve generator gives 2D foot coordinates over time: horizontal and vertical. In **section V** of the [paper](https://sites.google.com/view/d2gmbc/home), I describe my method for extending the trajectories into 3D.
 
 <div class="gallery" data-columns="2">
 	<img src="/images/Projects/spot-mini-mini/BEZ_ALGO.png" style="width: 100%">
