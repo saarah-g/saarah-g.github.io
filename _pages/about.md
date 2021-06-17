@@ -10,7 +10,7 @@ featured_image: /images/qdsh.jpg
 
 Thanks for stopping by! I'm **Maurice**, a Roboticist from [Bcharre, Lebanon](https://en.wikipedia.org/wiki/Bsharri).
 
-I currently work for [Boston Dynamics](https://www.bostondynamics.com/handle) on the Controls team for the **Stretch** project.
+I currently work for [Boston Dynamics](https://www.bostondynamics.com) on the Controls team for the [Stretch](https://www.bostondynamics.com/stretch) project.
 
 I graduated from **Northwestern**'s Master of Science in Robotics program! My interests within Robotics include controls, path planning, and hardware.
 
