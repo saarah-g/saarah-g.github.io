@@ -10,9 +10,9 @@ featured_image: /images/qdsh.jpg
 
 Thanks for stopping by! I'm **Maurice**, a Roboticist from [Bcharre, Lebanon](https://en.wikipedia.org/wiki/Bsharri).
 
-I currently work for [Boston Dynamics](https://www.bostondynamics.com/handle) on the Controls team for the **Handle** project.
+I currently work for [Boston Dynamics](https://www.bostondynamics.com/handle) on the Controls team for the **Stretch** project.
 
-I graduated from **Northwestern**'s Master of Science in Robotics program! My interests within Robotics include legged locomotion, path planning, mechatronics, and SLAM.
+I graduated from **Northwestern**'s Master of Science in Robotics program! My interests within Robotics include controls, path planning, and hardware.
 
 
 My most recent project involved the full-stack development of a $600 open source [quadruped platform](https://moribots.github.io/project/spot-mini-mini) for accessible reinforcement learning tasks.
