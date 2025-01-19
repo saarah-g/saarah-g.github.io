@@ -5,7 +5,7 @@ description: Great to meet you!
 featured_image: /images/qdsh.jpg
 ---
 <figure style= "text-align: center; float: left; width: 65%; margin-right: 2%; margin-left: 0%; font-style: italic">
-    <img src="/images/me.jpg" style="width: 70%;" class="img-fluid rounded">
+    <img src="/images/me.jpeg" style="width: 70%;" class="img-fluid rounded">
   </figure>
 
 Thanks for stopping by! I'm **Maurice**, a Roboticist from [Bcharre, Lebanon](https://en.wikipedia.org/wiki/Bsharri).
