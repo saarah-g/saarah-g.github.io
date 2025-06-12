@@ -8,7 +8,7 @@ featured_image: /images/qdsh.jpg
     <img src="/images/me.jpeg" style="width: 70%;" class="img-fluid rounded">
   </figure>
 
-Thanks for stopping by! I'm **Saarah**, a Roboticist from Coimbatore, India(https://en.wikipedia.org/wiki/Bsharri).
+Thanks for stopping by! I'm **Saarah**, a Roboticist from Coimbatore, India
 
 I currently work for [Boston Dynamics](https://www.bostondynamics.com) remotely from Detroit, MI. I am on on the Manipulation team for the [Stretch](https://www.bostondynamics.com/stretch) project, and am responsible for motion generation. To date, my code has helped Stretch move >6 million customer boxes.
 
